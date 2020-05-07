@@ -22,10 +22,8 @@
 
 ## Start learning git
 
-- [x] 
-[Git How To: курс навчання Git українською](https://githowto.com/uk)
-- [x] 
-[Скринкаст по Git](http://learn.javascript.ru/screencast/git)
+- [x] [Git How To: курс навчання Git українською](https://githowto.com/uk)
+- [x] [Скринкаст по Git](http://learn.javascript.ru/screencast/git)
 
 ## Setup git
 
