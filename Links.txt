@@ -1,0 +1,13 @@
+Frontend
+
+Полезные ссылки:
+
+Учебник: 
+https://html5book.ru/
+
+Селекторы потомков. Псевдоклассы и псевдоэлементы CSS
+https://idg.net.ua/blog/uchebnik-css/azy-css/psevdoklassy-psevdoelementy-selektory-potomkov
+
+First-child и тд
+https://developer.mozilla.org/ru/docs/Web/CSS/:nth-child
+https://html5book.ru/osnovy-css/#part2
