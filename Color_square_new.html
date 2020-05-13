@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            font-size: x-large;
+            
+            
+        }
+        td {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            font-weight: bolder;
+            
+            
+            
+        }   
+
+        tr:nth-child(2) {
+            height: 150px;
+        }
+
+        tr:nth-child(2) td:nth-child(2) {
+            width: 150px;
+            
+        }
+
+        tr:first-child td:first-child 
+             
+        {
+            background: orange;
+            border-color: black;
+            
+        }
+
+        tr:last-child td:first-child 
+             
+        {
+            background: orange;
+            border-color: black;
+        }        
+
+
+
+        tr:nth-child(2) td:nth-child(2)
+             
+        {
+            background: orange;
+            border-color: black;
+        }
+
+
+         tr:nth-child(2) td:nth-child(1)
+             
+        {
+            background: rgb(223, 142, 173) ;
+            border-color: black;
+            color: white;
+            font-size: x-large;
+        }
+
+        tr:nth-child(1) td:nth-child(2)
+             
+        {
+            background: red;
+            border-color: black;
+        }
+
+        tr:nth-child(2) td:nth-child(3)
+             
+        {
+            background: black;
+            border-color: black;
+            color: white;
+            word-break: pre-wrap;
+            width: 65px;
+           
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tbody>
+        <tr>
+            <td>LOGO</td>
+            <td colspan="2">MENU</td>
+        </tr>
+        <tr>
+            <td>NEWS FEED</td>
+            <td>LIST OF SOME THINGS</td>
+            <td  rowspan="2">NAVI-GATI ON BAR</td>
+        </tr>
+        <tr>
+            <td colspan="2">FOOTER</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
