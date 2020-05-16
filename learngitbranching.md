@@ -4,32 +4,36 @@
 
 - [x] Коммиты в GIT:
 
-```sh
-git commit -m ""
-git commit -m ""
-```
 
-- [ ] Ветвление в Git:
+git commit
+git commit
 
-```sh
-git checkout -b 
 
-```
+- [X] Ветвление в Git:
+
+
 
 или возможен вариант с двумя командами
 
-```sh
+git branch bugFix
+git checkout bugFix  
 
-```
+- [X] Ветки и слияния:
 
-- [ ] Ветки и слияния:
+git branch bugFix
+git checkout bugFix  
+git commit
+git checkout master
+git commit
+git merge bugFix
 
-```sh
 
-```
+- [X] Git Rebase
 
-- [ ] Git Rebase
-
-```sh
-
-```
+git branch bugFix
+git checkout bugFix  
+git commit
+git checkout master
+git commit
+git checkout bugFix 
+git rebase master
