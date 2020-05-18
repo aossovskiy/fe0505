@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .first {
+            max-width: 500px;
+            margin-bottom: 20px;          
+            
+
+        }
+
+        .second {
+            max-width: 500px;
+            margin-bottom: 20px; 
+        }
+
+        .third {
+            
+            max-width: 500px;
+            margin-bottom: 20px;
+             
+        }
+        .fourth {
+            
+            max-width: 500px;
+            margin-bottom: 20px;
+             
+        }
+
+
+
+        .surname   {
+           display: flex;
+           margin-bottom: 10px;    
+                   
+       }
+
+       .name   {
+           display: flex;
+           margin-bottom: 10px;     
+       }
+
+       .age   {
+           display: flex;
+           margin-bottom: 10px;  
+                              
+       }
+
+       .date   {
+           display: flex;
+           margin-bottom: 10px;  
+                              
+       }
+
+       .accept   {
+           display: flex;
+           margin-bottom: 10px;  
+                              
+       }
+
+       .e-mail {
+           display: flex;
+           margin-bottom: 10px; 
+       }
+
+       .pass {
+           display: flex;
+           margin-bottom: 10px; 
+       }
+       
+       .cats {
+           
+           margin-bottom: 10px; 
+       }
+
+       .color {
+           
+           margin-bottom: 10px; 
+       }
+
+       .time {
+           margin-bottom: 10px; 
+       }
+
+       .sleep {
+           margin-bottom: 10px; 
+       }
+       
+       
+       .rate {
+           display: flex;
+           margin-bottom: 10px; 
+       }
+
+       .comments {
+           display: flex;
+           margin-bottom: 10px; 
+       }
+       .recommend {
+           display: flex;
+           margin-bottom: 10px; 
+       }
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset class="first">
+            <legend style="color: blue;">Personal Information</legend>
+            <div class="surname">
+                <div>Surname:</div>
+                <div style="margin: 0 5px;"><input type="Text" size="15"></div>
+            </div>
+            <div class="name">
+                <div>Name:</div>
+                <div style="margin: 0 5px;"><input type="Text" size="15"></div>
+            </div>
+            <div class="age">
+                <div>How old are you?</div>
+                <div style="margin: 0 5px;"><input type="number" size="7"></div>
+            </div>
+            <div class="date">
+                <div>Full date of birth:</div>
+                <div style="margin: 0 5px;"><input type="datetime" placeholder="mm/dd/yyyy" size="10"></div>
+            </div>
+                <label>
+                    <div class="accept">
+                    <div>I accept the term of the agreement:</div>            
+                    <div style="margin: 0 5px;"><input type="checkbox" checked size="15"></div>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="second">
+            <legend style="color: blue;">Registration</legend>
+            <div class="e-mail">
+                <form>
+                    <label>E-mail:</label>
+                    <input type="email" style="margin: 0 5px;" placeholder="email@example.com">
+                </form>
+            </div>
+            <div class="pass">
+                <form>
+                    <label>Password:</label>
+                    <input type="password" >
+                </form>
+            </div> 
+        </fieldset>
+        <fieldset class="third">
+            <legend style="color: blue;">An intesting fact about you!</legend>
+            <div class="cats">    
+                <form>
+                        <label>Do you love cats?</label>
+                        <input type="radio" name="love" value="yes">
+                        <label>Yes</label>
+                        <input type="radio" name="love" value="no">
+                        <label>No</label>
+                </form>
+            </div>
+            <div class="color">
+                <form>
+                        <label for="favcolor">What is your favourite color?</label>
+                        <input type="color" style="margin: 0 5px;">
+                </form>
+            </div>
+            <div class="time">
+                <form>
+                    <label>What time do you go to bed?</label>
+                    <input type="time" style="margin: 0 5px;">
+                </form>
+            </div>
+            <div class="sleep">
+                <form>
+                    <label>What are your favorite brand of car?</label>
+                    <TExtarea>Audi BMW</TExtarea>
+                </form>
+            </div>
+            <div class="rate">
+                <form>
+                    <label>How do you rate our work?</label>
+                    <input type="range" min="1" max="100" value="0">
+                      
+                </form>
+            </div>
+        </fieldset>
+        <fieldset class="fourth">
+            <legend style="color: blue;">Additional info:</legend> 
+            <div class="comments">
+                <form>
+                    <label>Comments</label>
+                    <TExtarea placeholder="Type something here"></TExtarea>
+                </form>
+            </div>
+            <div class="recommend">
+                <form>
+                    <label>Would you recomnend us?</label>
+                    <select>
+                        <option>Yes</option>
+                        <option>Absolutely!</option>
+                    </select>
+                </form>
+            </div>
+        </fieldset>
+        <form>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
