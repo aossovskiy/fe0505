@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AviaSales</title>
+
+<style>
+
+    body {
+        background: rgb(231, 246, 248);
+        
+    }
+    .content {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        
+        
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: flex-start;
+        
+        flex-basis: 232px;
+        height: 252px;
+        margin-right: 10px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        cursor: pointer;
+    }
+
+
+    .docking_text {
+        display: flex;
+        flex-direction: column;
+       
+        margin-top: 7px;
+        margin-left: 20px;
+        align-items: center;
+        
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+
+        color: #4A4A4A;
+        
+    }
+
+
+    .all {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-left: 20px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+
+        color: #4A4A4A;
+        
+    }
+  
+    .blocks {
+        
+        flex-basis: 503px;
+        height: 1070px;
+
+        
+        
+    }
+
+    .properties {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 502px;
+        height: 48px;
+    
+        justify-content:space-between;
+        align-items: center;
+        
+        
+    }
+    .cheap {
+        display: flex;
+        
+        flex-grow: 1;
+        height: 100%;
+        background-color: skyblue;
+        align-items: center;
+        justify-content: center;
+        
+
+        background: #2196F3;
+        color: white;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        
+        letter-spacing: 0.5px;
+       
+
+        color: #FFFFFF;
+           
+    }
+
+    .fast {
+        display: flex;
+        
+        flex-grow: 1;
+        height: 100%;
+        
+        align-items: center;
+        justify-content: center;
+
+        background: #FFFFFF;
+        border: 1px solid #DFE5EC;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        
+        letter-spacing: 0.5px;
+    
+        color: #4A4A4A;  
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        height: 184px;
+
+        justify-content: space-around;
+
+        margin-top: 20px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        
+    }
+    .price_logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        
+        color: #2196F3;
+    }
+  
+        
+    .fly_to {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+       
+        flex-wrap: wrap;
+    }
+    .direction_to_destination, .trip_time_way, .docking_place_docking  {
+        
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+
+            letter-spacing: 0.5px;
+
+            color: #A0B0B9;
+
+        }
+    .direction_to_time, .trip_time_time, .docking_place_place {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;   
+
+            display: flex;
+            align-items: center;
+
+            color: #4A4A4A;
+                }
+
+    .fly_back {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+       
+        flex-wrap: wrap;  
+    }
+
+</style>
+</head>
+<body>
+    <div class="content">
+        <div class="menu">
+                <div class="docking_text">КОЛИЧЕСТВО ПЕРЕСАДОК</div>
+                <div class="all">    
+                    <div class="d_checkbox"><input type="checkbox"></div>
+                    <div class="all_docking">Все</div> 
+                </div>
+                <div class="all">    
+                    <div class="d_checkbox"><input type="checkbox" checked ></div>
+                    <div class="all_docking">Без пересадок</div> 
+                </div>
+                <div class="all">    
+                    <div class="d_checkbox"><input type="checkbox" checked></div>
+                    <div class="all_docking">1 пересадка</div> 
+                </div>
+                <div class="all">    
+                    <div class="d_checkbox"><input type="checkbox" checked></div>
+                    <div class="all_docking">2 пересадки</div> 
+                </div>
+                <div class="all">    
+                    <div class="d_checkbox"><input type="checkbox" ></div>
+                    <div class="all_docking">3 пересадки</div> 
+                </div>         
+        </div>
+        <div class="blocks">
+            <div class="properties">
+                <div class="cheap">САМЫЙ ДЕШЕВЫЙ</div>
+                <div class="fast">САМЫЙ БЫСТРЫЙ</div>
+            </div>
+            <div class="card">
+                <div class="price_logo">
+                    <div class="price" >15000 UAH</div>
+                    <div class="logo"><img src="S7_logo.png" alt=""></div>
+                </div>
+                <div class="fly_to">
+                    <div class="direction_to">
+                    <div class="direction_to_destination">KBP - MIL</div>
+                    <div class="direction_to_time">10:45–08:00</div>
+                </div>
+                    <div class="trip_time">
+                    <div class="trip_time_way">В ПУТИ</div>
+                    <div class="trip_time_time">21ч 15м</div>
+                </div>
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>
+                </div>  
+            
+                <div class="fly_back">
+                    <div class="direction_to">
+                        <div class="direction_to_destination">MIL - KBP</div>
+                        <div class="direction_to_time">11:20 – 00:50</div>
+                    </div>
+                    <div class="trip_time">
+                        <div class="trip_time_way">В ПУТИ</div>
+                        <div class="trip_time_time">21ч 15м</div>
+                    </div> 
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>    
+                </div>
+            </div>
+            <div class="card">
+                <div class="price_logo">
+                    <div class="price" >15000 UAH</div>
+                    <div class="logo"><img src="S7_logo.png" alt=""></div>
+                </div>
+                <div class="fly_to">
+                    <div class="direction_to">
+                    <div class="direction_to_destination">KBP - MIL</div>
+                    <div class="direction_to_time">10:45–08:00</div>
+                </div>
+                    <div class="trip_time">
+                    <div class="trip_time_way">В ПУТИ</div>
+                    <div class="trip_time_time">21ч 15м</div>
+                </div>
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>
+                </div>  
+            
+                <div class="fly_back">
+                    <div class="direction_to">
+                        <div class="direction_to_destination">MIL - KBP</div>
+                        <div class="direction_to_time">11:20 – 00:50</div>
+                    </div>
+                    <div class="trip_time">
+                        <div class="trip_time_way">В ПУТИ</div>
+                        <div class="trip_time_time">21ч 15м</div>
+                    </div> 
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>    
+                </div>
+            </div>
+            <div class="card">
+                <div class="price_logo">
+                    <div class="price" >15000 UAH</div>
+                    <div class="logo"><img src="S7_logo.png" alt=""></div>
+                </div>
+                <div class="fly_to">
+                    <div class="direction_to">
+                    <div class="direction_to_destination">KBP - MIL</div>
+                    <div class="direction_to_time">10:45–08:00</div>
+                </div>
+                    <div class="trip_time">
+                    <div class="trip_time_way">В ПУТИ</div>
+                    <div class="trip_time_time">21ч 15м</div>
+                </div>
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>
+                </div>  
+            
+                <div class="fly_back">
+                    <div class="direction_to">
+                        <div class="direction_to_destination">MIL - KBP</div>
+                        <div class="direction_to_time">11:20 – 00:50</div>
+                    </div>
+                    <div class="trip_time">
+                        <div class="trip_time_way">В ПУТИ</div>
+                        <div class="trip_time_time">21ч 15м</div>
+                    </div> 
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>    
+                </div>
+            </div>
+            <div class="card">
+                <div class="price_logo">
+                    <div class="price" >15000 UAH</div>
+                    <div class="logo"><img src="S7_logo.png" alt=""></div>
+                </div>
+                <div class="fly_to">
+                    <div class="direction_to">
+                    <div class="direction_to_destination">KBP - MIL</div>
+                    <div class="direction_to_time">10:45–08:00</div>
+                </div>
+                    <div class="trip_time">
+                    <div class="trip_time_way">В ПУТИ</div>
+                    <div class="trip_time_time">21ч 15м</div>
+                </div>
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>
+                </div>  
+            
+                <div class="fly_back">
+                    <div class="direction_to">
+                        <div class="direction_to_destination">MIL - KBP</div>
+                        <div class="direction_to_time">11:20 – 00:50</div>
+                    </div>
+                    <div class="trip_time">
+                        <div class="trip_time_way">В ПУТИ</div>
+                        <div class="trip_time_time">21ч 15м</div>
+                    </div> 
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>    
+                </div>
+            </div>
+            <div class="card">
+                <div class="price_logo">
+                    <div class="price" >15000 UAH</div>
+                    <div class="logo"><img src="S7_logo.png" alt=""></div>
+                </div>
+                <div class="fly_to">
+                    <div class="direction_to">
+                    <div class="direction_to_destination">KBP - MIL</div>
+                    <div class="direction_to_time">10:45–08:00</div>
+                </div>
+                    <div class="trip_time">
+                    <div class="trip_time_way">В ПУТИ</div>
+                    <div class="trip_time_time">21ч 15м</div>
+                </div>
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>
+                </div>  
+            
+                <div class="fly_back">
+                    <div class="direction_to">
+                        <div class="direction_to_destination">MIL - KBP</div>
+                        <div class="direction_to_time">11:20 – 00:50</div>
+                    </div>
+                    <div class="trip_time">
+                        <div class="trip_time_way">В ПУТИ</div>
+                        <div class="trip_time_time">21ч 15м</div>
+                    </div> 
+                    <div class="docking_place">
+                        <div class="docking_place_docking">2 ПЕРЕСАДКИ</div>
+                        <div class="docking_place_place">HKG, JNB</div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
